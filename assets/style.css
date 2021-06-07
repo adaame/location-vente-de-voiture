@@ -7,7 +7,7 @@
 }
 html{
     box-sizing: border-box;
-    font-size: 65,2%;/*Permet d'avoir moins de deformarion en zoumeent et utilisation des rem*/
+    font-size: 65.2%;/*Permet d'avoir moins de deformarion en zoumeent et utilisation des rem*/
 }
 body{
     font-family: lato;
@@ -43,4 +43,50 @@ body{
     width: 100%;
     grid-row: 1/2;
     grid-column: 1/-1;
+}
+.name{
+    grid-row: 1 / 2;
+    grid-column: 1 /-1;
+    width: 80%;
+    font-family: 'lato';
+    align-self: end;
+    justify-self: center;
+    z-index: 3;
+    background-color: #101d3c;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.25rem;
+    color: #FFF;
+    font-weight: 400;
+    transform: translateY(50%);/*pour qu'il chevauche l'image et la carte*/
+} 
+.location, .cars{
+    margin-top: 2.5rem;
+}
+.location, .cars, .details, .price{
+font-size: 1.5rem;
+margin-left: 2rem;
+display: flex;
+align-items: center;
+
+}
+i{
+    fill: #c69963;
+    height:2rem ;
+    width: 2rem;
+    margin-right:1rem;
+}
+.btn{
+   grid-column: 1 /-1;
+   background-color: #9E5A63;
+   color: white;
+   border: none;
+   font-size:1.5rem;
+   text-transform: uppercase;
+   padding: 1.8rem 3rem;
+   cursor: pointer;
+   transform: all 0.2s linear;
+}
+.btn:hover{
+    background: #324455;
 }
