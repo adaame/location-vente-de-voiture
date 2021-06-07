@@ -1,0 +1,23 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;  /* va hérité du box-sizing du html */
+}
+html{
+    box-sizing: border-box;
+    font-size: 65,2%;/*Permet d'avoir moins de deformarion et utilisation des rem*/
+}
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr)[start]/*1er colonne*/
+    repeat(8, minmax(min-content,14rem)) 
+    [end]  
+    minmax(6rem, 1fr);/*Dernière colonne*/
+}
+
+.grid{
+    
+}
